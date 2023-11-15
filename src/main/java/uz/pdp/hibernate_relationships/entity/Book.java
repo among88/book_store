@@ -19,11 +19,9 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    private Author author;
     private String linkImg;
     private String summary;
     private boolean isAvailable;
     @ManyToOne(cascade = CascadeType.PERSIST)
-    private Author authors;
+    private Author author;
 }
